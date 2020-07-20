@@ -1,1 +1,43 @@
-<paste log output from Docker prediction, here>
+Successfully built ed1e8c6ad587
+Successfully tagged housing:latest
+REPOSITORY            TAG                 IMAGE ID            CREATED                  SIZE
+housing               latest              ed1e8c6ad587        Less than a second ago   1.24GB
+<none>                <none>              8813b6706f16        55 seconds ago           1.24GB
+<none>                <none>              4a528efa724e        3 minutes ago            1.24GB
+<none>                <none>              9f44b3ee325e        6 minutes ago            1.24GB
+<none>                <none>              986f9b1d1ad2        12 minutes ago           1.24GB
+<none>                <none>              8a9114be4e58        16 minutes ago           1.24GB
+<none>                <none>              4e0ddb45b9d4        18 minutes ago           1.24GB
+<none>                <none>              005bd0c2c433        23 minutes ago           1.24GB
+<none>                <none>              279ef8f4114c        31 minutes ago           1.24GB
+<none>                <none>              b02537056001        40 minutes ago           1.24GB
+<none>                <none>              89a6e34d89e6        8 hours ago              1.24GB
+<none>                <none>              fc54dbd83c67        8 hours ago              1.24GB
+api                   latest              27d44f57cab3        2 days ago               1.38GB
+<none>                <none>              0a4182b974b9        2 days ago               929MB
+github/backup-utils   latest              b4335ddded49        3 months ago             144MB
+rwnfoo/cheers2019     latest              d8fe5330559c        3 months ago             4.01MB
+<none>                <none>              dead4d16a1f3        3 months ago             356MB
+debian                stretch-slim        4e6990ebcef5        4 months ago             55.3MB
+golang                1.11-alpine         e116d2efa2ab        11 months ago            312MB
+python                3.7.3-stretch       34a518642c76        13 months ago            929MB
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 226-421-155
+[2020-07-20 01:33:50,315] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-07-20 01:33:50,330] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-07-20 01:33:50,341] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-07-20 01:33:50,345] INFO in app: Prediction:
+[20.35373177134412]
+172.17.0.1 - - [20/Jul/2020 01:33:50] "POST /predict HTTP/1.1" 200 -
