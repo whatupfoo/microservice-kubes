@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+[![<ORG_NAME>](https://circleci.com/gh/rwnfoo/microservice-kubes.svg?style=svg)](https://app.circleci.com/pipelines/github/rwnfoo/microservice-kubes)
+
 
 ## Project Overview
 
