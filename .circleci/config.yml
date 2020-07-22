@@ -26,6 +26,7 @@ name: install dependencies
 command: |
 python3 -m venv venv
 . venv/bin/activate
+make setup
 make install
 # Install hadolint
 wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
@@ -40,4 +41,4 @@ key: v1-dependencies-{{ checksum "requirements.txt" }}
 name: run lint
 command: |
 . venv/bin/activate
-make lint 
+make lint
