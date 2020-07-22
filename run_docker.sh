@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build --tag=rwnfoo/housing .
+docker build --tag=housing .
 
 # Step 2:
 # List docker images

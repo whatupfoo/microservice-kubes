@@ -6,7 +6,6 @@
 # Step 1:
 # Create dockerpath
 dockerpath=rwnfoo/housing
-tag=ver.1.0
 
 # Step 2:
 # Authenticate & tag
